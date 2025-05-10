@@ -100,3 +100,12 @@ poltrona4.addEventListener("click", () => {
 });
 
 busMap.appendChild(poltrona4);
+
+// Função para limpar todas as reservas
+function limparReservas() {
+  if (confirm("Tem certeza que deseja limpar todas as reservas?")) {
+    reservas = {}; // Limpa o objeto de reservas
+    salvarReservas(); // Salva no localStorage
+    location.reload(); // Recarrega a página para atualizar o mapa
+  }
+}
