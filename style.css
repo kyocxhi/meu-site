@@ -21,16 +21,30 @@ h1 {
   padding: 20px;
   border-radius: 12px;
   display: grid;
-  grid-template-columns: repeat(5, 80px);
-  grid-gap: 10px;
+  grid-template-columns: repeat(5, 60px);
+  grid-template-rows: repeat(12, 60px);
+  grid-gap: 5px;
   justify-content: center;
-  max-width: fit-content;
+  max-width: 340px;
   margin: auto;
+  max-height: 780px;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .bus {
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(12, 50px);
+    grid-gap: 3px;
+    max-width: 280px;
+    max-height: 650px;
+    padding: 10px;
+  }
 }
 
 .seat {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   background-color: #4CAF50;
   border-radius: 8px;
   color: white;
@@ -38,9 +52,9 @@ h1 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
-  padding: 5px;
+  padding: 3px;
   white-space: pre-line;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -51,6 +65,8 @@ h1 {
 }
 
 .corridor {
+  width: 50px;
+  height: 50px;
   background-color: transparent;
   pointer-events: none;
 }
