@@ -1,93 +1,90 @@
 body {
   font-family: Arial, sans-serif;
-  padding: 20px;
-  text-align: center;
-  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1500&q=80');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: #111;
   color: #fff;
-  min-height: 100vh;
   margin: 0;
 }
 
-h1 {
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-}
-
-.bus {
-  background-color: rgba(0, 0, 0, 0.7);
+header {
+  background-color: #141414;
   padding: 20px;
-  border-radius: 12px;
-  display: grid;
-  grid-template-columns: repeat(5, 60px);
-  grid-template-rows: repeat(12, 60px);
-  grid-gap: 5px;
-  justify-content: center;
-  max-width: 340px;
-  margin: auto;
-  max-height: 780px;
-  overflow: hidden;
-}
-
-@media (max-width: 480px) {
-  .bus {
-    grid-template-columns: repeat(5, 50px);
-    grid-template-rows: repeat(12, 50px);
-    grid-gap: 3px;
-    max-width: 280px;
-    max-height: 650px;
-    padding: 10px;
-  }
-}
-
-.seat {
-  width: 50px;
-  height: 50px;
-  background-color: #4CAF50;
-  border-radius: 8px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 10px;
   text-align: center;
-  padding: 3px;
-  white-space: pre-line;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.seat.reserved {
-  background-color: #e74c3c;
-  cursor: not-allowed;
+header h1 {
+  color: #e50914;
 }
 
-.corridor {
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  pointer-events: none;
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #141414;
+  color: #aaa;
 }
 
-/* Estilo para o botão */
-#clearReservationsBtn {
-  background-color: #f39c12;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-top: 20px;
+#animeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
+}
+
+.anime-card {
+  width: 180px;
+  text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-#clearReservationsBtn:hover {
-  background-color: #e67e22;
+.anime-card img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-#clearReservationsBtn:active {
-  background-color: #d35400;
+.anime-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.anime-img {
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.anime-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.video-player iframe {
+  width: 100%;
+  height: 360px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.episode-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.episode-buttons button {
+  background-color: #e50914;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.episode-buttons button:hover {
+  background-color: #b00710;
 }
