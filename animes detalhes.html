@@ -1,21 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>AnimeFlix - Detalhes</title>
+  <title>Detalhes do Anime - AnimeFlix</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>AnimeFlix</h1>
+    <a href="index.html" class="back-link">← Voltar</a>
   </header>
 
   <main class="anime-info">
-    <img class="anime-img" id="animeImage" src="" alt="Capa do Anime" />
+    <img class="anime-img" id="animeImage" src="" alt="" />
     <div class="anime-content">
       <h2 id="animeTitle">Título do Anime</h2>
       <p id="animeDescription">Descrição do Anime</p>
-      <div class="season-select">
+      <div>
         <label for="seasonSelect">Temporada:</label>
         <select id="seasonSelect"></select>
       </div>
@@ -30,7 +32,6 @@
     <p>&copy; 2025 AnimeFlix</p>
   </footer>
 
-  <script src="data.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
