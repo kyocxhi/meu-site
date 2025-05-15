@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Assistir Anime - AnimeFlix</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>AnimeFlix - Detalhes</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -11,16 +11,15 @@
   </header>
 
   <main class="anime-info">
-    <img id="animeImage" class="anime-img" src="" alt="Capa do Anime">
+    <img class="anime-img" id="animeImage" src="" alt="Capa do Anime" />
     <div class="anime-content">
-      <h2 id="animeTitle">Título</h2>
-      <p id="animeDescription">Descrição</p>
-
-      <label for="seasonSelect">Temporada:</label>
-      <select id="seasonSelect"></select>
-
-      <div id="episodeButtons" class="episode-buttons"></div>
-
+      <h2 id="animeTitle">Título do Anime</h2>
+      <p id="animeDescription">Descrição do Anime</p>
+      <div class="season-select">
+        <label for="seasonSelect">Temporada:</label>
+        <select id="seasonSelect"></select>
+      </div>
+      <div class="episode-buttons" id="episodeButtons"></div>
       <div class="video-player">
         <iframe id="animePlayer" src="" allowfullscreen></iframe>
       </div>
